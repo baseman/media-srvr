@@ -10,4 +10,4 @@ transmission:
     - PUID=10000
     - PGID=10000
   volumes:
-    - /home/dev/plex-media/share:/share
+    - /home/dev/transmission-media/share:/share

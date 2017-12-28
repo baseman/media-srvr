@@ -1,0 +1,13 @@
+transmission:
+  container_name: transmission
+  image: docker.io/cryptout/transmission
+  hostname: transmission
+  network_mode: host
+  environment:
+    - TZ=America/New_York
+    - USER=media
+    - USERID=10000
+    - PUID=10000
+    - PGID=10000
+  volumes:
+    - /home/dev/plex-media/share:/share
